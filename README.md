@@ -1,5 +1,9 @@
 # Gifbot for Slack
 
+This is a modified version of [Gifbot](https://github.com/josephschmitt/gifbot). This version prevents direct requests to the gifbot URL.
+
+Original Documentation:
+
 Gifs for your [Slack](https://slack.com) channel.
 
 Do you find that you cannot properly and completely express yourself unless it's done in animated form? You're not alone! Gifbot is here to help.
