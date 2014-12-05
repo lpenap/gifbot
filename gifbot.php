@@ -16,6 +16,13 @@ $term = str_replace(' ', '-', $text);
 $url = '';
 $giphy_endpoint = 'http://api.giphy.com/v1/gifs/random?api_key=' . $giphy_api_key; // Default to getting a random gif
 
+// if not token, die
+if (!r::get('token', null)) {
+  header("HTTP/1.1 403 Forbidden");
+  die;
+}
+
+
 // If there's a search term, use one of the search API's
 if (!empty($term)) {
 	// Use Giphy's Translation API
